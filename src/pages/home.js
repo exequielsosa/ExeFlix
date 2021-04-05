@@ -11,18 +11,17 @@ export default function Home() {
       <HeaderContainer>
         <Feature>
           <Feature.Title>
-            Unlimited films, TV programmes and more.
+            Segui y administra los resultados de tus Torneos al instante.
           </Feature.Title>
           <Feature.SubTitle>
-            Watch Anywhere. Cancel at any time.
+            En cualquier lugar y a toda hora.  Tu pasion sin horarios.
           </Feature.SubTitle>
           <OptForm>
-            <OptForm.Input placeholder="Email address" />
-            <OptForm.Button>Try it now</OptForm.Button>
+            <OptForm.Input placeholder="Correo Electronico" />
+            <OptForm.Button>Registrate</OptForm.Button>
             <OptForm.Break />
             <OptForm.Text>
-              Ready to watch? Enter your email to create or restart your
-              membership.
+              ¡Registrate ahora!, es gratis.               
             </OptForm.Text>
           </OptForm>
         </Feature>

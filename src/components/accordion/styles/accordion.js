@@ -67,13 +67,14 @@ export const Header = styled.div`
 export const Body = styled.div`
     max-height: 1200px;
     transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-    font-size: 26px;
+    font-size: 18px;
     font-weight: normal;
     line-height: normal;
-    background: #303030;
+    background: rgba(45,45,45,.5);
     padding: 0.8em 2.2em 0.8em 1.2em;
     white-space: pre-wrap;
     user-select: none;
+    border-bottom: 1px solid black;
 
     @media (max-width: 600px) {
         font-size: 16px;

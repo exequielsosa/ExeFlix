@@ -13,7 +13,7 @@ export default function SignIn() {
   const [password, setPassword] = useState();
   const [error, setError] = useState("");
 
-  const isInvalid = password === '' || emailAdress === '';
+  const isInvalid = password === "" || emailAdress === "";
   const handleSignIn = (event) => {
     event.preventDefault();
 
@@ -35,32 +35,32 @@ export default function SignIn() {
     <>
       <HeaderContainer>
         <Form>
-          <Form.Title>Sign In</Form.Title>
+          <Form.Title>Ingresa</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
 
           <Form.Base onSubmit={handleSignIn} method="POST">
             <Form.Input
-              placeholder="Email address"
+              placeholder="Correo Electronico"
               value={emailAdress}
               onChange={({ target }) => setEmailAdress(target.value)}
             />
             <Form.Input
-              placeholder="Password"
+              placeholder="Contraseña"
               type="password"
               autoComplete="off"
               value={password}
               onChange={({ target }) => setPassword(target.value)}
             />
             <Form.Submit disabled={isInvalid} type="submit">
-              Sign In
+              Aceptar
             </Form.Submit>
           </Form.Base>
           <Form.Text>
-            New to Netflix? <Form.Link to="/signup">Sign up now</Form.Link>
+            Nuevo en ReadyScore? <Form.Link to="/signup">Registrate!</Form.Link>
           </Form.Text>
           <Form.TextSmall>
-            This page is protected by Goole reCaptcha to ensure you're not a
-            bot. Learn more.
+            Este sitio esta protegido por Goole reCaptcha para asegurarnos de
+            que no eres un robot. Leer mas.
           </Form.TextSmall>
         </Form>
       </HeaderContainer>

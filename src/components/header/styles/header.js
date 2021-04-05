@@ -5,7 +5,7 @@ export const Background = styled.div`
   display: flex;
   flex-direction: column;
   background: url(${({ src }) =>
-      src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
+      src ? `../images/misc/${src}.jpg` : "../images/misc/fondoinicio2.jpg"})
     top left / cover no-repeat;
 
   @media (max-width: 1100px) {
@@ -33,12 +33,10 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 32px;
-  width: 108px;
+  width: 200px;
   margin-right: 40px;
 
   @media (min-width: 1449px) {
-    height: 45px;
     width: 167px;
   }
 `;
@@ -58,6 +56,7 @@ export const ButtonLink = styled(ReactRouterLink)`
   box-sizing: border-box;
   &:hover {
     background-color: #f40612;
+    text-decoration: underline;
   }
 `;
 
